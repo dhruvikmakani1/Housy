@@ -9,6 +9,6 @@
     <string name="category_homes">Homes</string>
     <string name="category_plots">Plotes</string>
     <string name="category_commercial">Commercial</string>
-    <string name="my_maps_api_key"/>
+    <string name="my_maps_api_key">AIzaSyBtevzgt1LAbfzmzcv1Xranokl7BiprTTk</string>
     <string name="back_button">Back</string>
 </resources>

@@ -175,12 +175,14 @@ public class PostAddActivity extends AppCompatActivity {
                             address = data.getStringExtra("address");
                             city = data.getStringExtra("city");
                             country = data.getStringExtra("country");
+                            state = data.getStringExtra("state");
 
                             Log.d(TAG, "onActivityResult: latitude: " + latitude);
                             Log.d(TAG, "onActivityResult: longitude: " + longitude);
                             Log.d(TAG, "onActivityResult: address: " + address);
                             Log.d(TAG, "onActivityResult: city: " + city);
                             Log.d(TAG, "onActivityResult: country: " + country);
+                            Log.d(TAG, "onActivityResult: state: " + state);
 
                             binding.locationAct.setText(address);
                         }
@@ -421,6 +423,7 @@ public class PostAddActivity extends AppCompatActivity {
     private String phoneNumber = ""; // no usages
     private String country = ""; // no usages
     private String city = ""; // no usages
+    private String state = "";
     private String address = ""; // no usages
     private double latitude = 0; // no usages
     private double longitude = 0; // no usages
@@ -466,7 +469,11 @@ public class PostAddActivity extends AppCompatActivity {
             //no area size unit entered
             binding.areaSizeUnitAct.setError("Choose Area Size Unit...!");
             binding.areaSizeUnitAct.requestFocus();
-        } else if (price.isEmpty()){
+        }else if (address.isEmpty()){
+            //no price entered
+            binding.priceEt.setError("Pick Location...!");
+            binding.priceEt.requestFocus();
+        }  else if (price.isEmpty()){
             //no price entered
             binding.priceEt.setError("Enter Price...!");
             binding.priceEt.requestFocus();
@@ -496,6 +503,9 @@ public class PostAddActivity extends AppCompatActivity {
         //show progress
         progressDialog.setMessage("Publishing Ad...");
         progressDialog.show();
+        if (floors.isEmpty()){
+            floors="0";
+        }
         if (bedRooms.isEmpty()){
             bedRooms="0";
         }
@@ -530,6 +540,9 @@ public class PostAddActivity extends AppCompatActivity {
         hashMap.put("bathRooms", Long.parseLong(bathRooms));
         hashMap.put("price", Double.parseDouble(price));
         hashMap.put("timestamp", timestamp);
+        hashMap.put("city", city);
+        hashMap.put("country", country);
+        hashMap.put("state", state);
         hashMap.put("latitude", latitude);
         hashMap.put("longitude", longitude);
 
