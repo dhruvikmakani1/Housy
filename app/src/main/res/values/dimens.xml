@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Height for toolbars in whole app-->
+    <dimen name="m_toolbar_height">55dp</dimen>
+    <!--Height for buttons in whole app-->
+    <dimen name="m_button_height">55dp</dimen>
+</resources>

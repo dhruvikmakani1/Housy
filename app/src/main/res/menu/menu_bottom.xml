@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Menu item to show HomeFragment to show properties-->
+    <item
+        android:id="@+id/item_home"
+        android:title="Home"
+        android:icon="@drawable/home_black" />
+
+    <!--Menu item to show ChatsListFragment to show list of chats-->
+    <item
+        android:id="@+id/item_chats"
+        android:title="Chats"
+        android:icon="@drawable/chat_black" />
+
+    <!--Menu item to show FavoritListFragment to show properties added to favorite-->
+    <item
+        android:id="@+id/item_favorite"
+        android:title="Favorites"
+        android:icon="@drawable/favorite_no_black" />
+
+    <!--Menu item to show user profile-->
+    <item
+        android:id="@+id/item_profile"
+        android:title="Profile"
+        android:icon="@drawable/person_black" />
+
+</menu>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RealEstate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_account_register">No Account? <b>Register</b></string>
+    <string name="have_account_login">Have Account? <b>Login</b></string>
+    <string name="didn_t_receive_otp_resend">Didn\'t Receive OTP? <b>Resend</b></string>
+    <string name="forgot_password_recover">Forgot Password? <b>Recover</b></string>
+    <string name="category_homes">Homes</string>
+    <string name="category_plots">Plotes</string>
+    <string name="category_commercial">Commercial</string>
+    <string name="my_maps_api_key"/>
+    <string name="back_button">Back</string>
+</resources>
